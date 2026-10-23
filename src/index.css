@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #09090b;
+    --bg-surface: #0f0f15;
+    --bg-elevated: #161622;
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-focus: rgba(168, 85, 247, 0.4);
+    
+    --text-primary: #f4f4f8;
+    --text-muted: #9e9eb4;
+    --text-dim: #646479;
+    
+    --accent-violet: #8b5cf6;
+    --accent-lavender: #c084fc;
+    --accent-glow: rgba(139, 92, 246, 0.18);
+    
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    /* Modern scrollbar tokens */
+    --scrollbar-thumb: #2d2d3d;
+    --scrollbar-track: #09090b;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: var(--font-display);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+    scrollbar-width: thin;
+  }
+
+  /* Headings typography rules adhering to modern web guidance */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--text-primary);
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Code elements */
+  code, pre {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Accessible custom scrollbars with WebKit fallbacks */
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090b;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a38;
+    border-radius: 5px;
+    border: 2px solid #09090b;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #47475c;
+  }
+}
+
+/* Glassmorphism & Atmospheric Utilities */
+.glass-panel {
+  background: rgba(15, 15, 23, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(22, 22, 34, 0.85);
+  border-color: rgba(168, 85, 247, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(139, 92, 246, 0.12);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Subtle cinematic glows */
+.violet-glow-sm {
+  box-shadow: 0 0 20px -3px rgba(139, 92, 246, 0.25);
+}
+
+.violet-glow-md {
+  box-shadow: 0 0 35px -5px rgba(139, 92, 246, 0.35);
+}
+
+.text-gradient-violet {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e4ed 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-accent {
+  background: linear-gradient(135deg, #c084fc 0%, #8b5cf6 60%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom interactive button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #9d6fff 0%, #8b5cf6 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 rgba(124, 58, 237, 0.45);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f4f4f8;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(168, 85, 247, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Grid background texture */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
