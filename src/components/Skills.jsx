@@ -34,7 +34,7 @@ export default function Skills() {
           Tools & Technical Foundations
         </h2>
         <p className="text-zinc-400 max-w-2xl text-base sm:text-lg">
-          A focused stack centered on modern web technologies, AI integrations, and computer science fundamentals.
+          A focused stack centered on modern web technologies, Python, and computer science fundamentals.
         </p>
 
         {/* Filter Tabs */}

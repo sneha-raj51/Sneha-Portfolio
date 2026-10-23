@@ -70,6 +70,7 @@ export const skillsData = [
     icon: "Server",
     description: "Architecting reliable server logic and application data flows.",
     skills: [
+      "Python",
       "Node.js",
       "Express.js",
       "RESTful API Design",
@@ -80,12 +81,10 @@ export const skillsData = [
     ]
   },
   {
-    category: "AI & Modern Tooling",
+    category: "Developer Tooling & Workflows",
     icon: "Cpu",
-    description: "Leveraging intelligent workflows and modern developer tools.",
+    description: "Leveraging efficient developer tooling, version control, and cloud workflows.",
     skills: [
-      "LLM & AI Integration",
-      "Prompt Engineering",
       "Git & GitHub",
       "Vite & Build Tooling",
       "Postman",
@@ -115,7 +114,7 @@ export const projectsData = [
     subtitle: "AI-Powered Career & Interview Platform",
     description: "An intelligent interview and career preparation platform featuring resume analysis, job-description intelligence, skill-gap insights, mock interviews, and application tracking.",
     featured: true,
-    tags: ["React", "AI / LLM Integration", "Career Tech", "Tailwind CSS", "Full-Stack"],
+    tags: ["React", "AI Integration", "Career Tech", "Tailwind CSS", "Full-Stack"],
     highlights: [
       "Automated resume analysis with ATS scoring & targeted suggestions",
       "Skill-gap intelligence mapped against real-world job descriptions",
@@ -170,7 +169,7 @@ export const projectsData = [
     subtitle: "Conversational Academic Assistant",
     description: "A conversational AI application designed to support students with academic questions, study planning, and conceptual walkthroughs.",
     featured: false,
-    tags: ["React", "Conversational AI", "Student Support", "EdTech", "Prompt Design"],
+    tags: ["React", "Conversational AI", "Student Support", "EdTech", "Full-Stack"],
     highlights: [
       "Natural language academic query resolution across core topics",
       "Interactive course subject chips for fast navigation",

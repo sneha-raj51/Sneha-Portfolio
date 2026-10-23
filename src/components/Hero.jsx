@@ -420,7 +420,7 @@ export default function Hero() {
           {/* Core Stack Strip */}
           <div className="hero-footer-anim pt-4 border-t border-white/5 flex flex-wrap items-center gap-2 text-[11px] font-mono text-zinc-400">
             <span className="text-zinc-500 font-sans uppercase tracking-widest text-[10px] mr-1">Stack:</span>
-            {['React', 'Node.js', 'Tailwind CSS', 'RESTful APIs', 'AI / LLM', 'Creative UI'].map((item) => (
+            {['React', 'Node.js', 'Python', 'Tailwind CSS', 'RESTful APIs', 'Creative UI'].map((item) => (
               <span 
                 key={item}
                 className="px-2 py-0.5 rounded-md bg-white/[0.03] border border-white/5 text-zinc-300"

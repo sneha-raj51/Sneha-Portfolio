@@ -14,7 +14,7 @@ export default function About() {
     {
       icon: Cpu,
       title: "Artificial Intelligence",
-      description: "Integrating intelligent LLM capabilities into real-world workflows, such as career intelligence tools and conversational educational assistants."
+      description: "Integrating intelligent AI capabilities into real-world workflows, such as career intelligence tools and conversational educational assistants."
     },
     {
       icon: Smartphone,
