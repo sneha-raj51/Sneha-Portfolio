@@ -11,10 +11,7 @@ export default function BeyondTheCode() {
       aria-labelledby="beyond-code-heading"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center mb-14">
-        <span className="font-mono text-xs uppercase tracking-widest text-violet-400 bg-violet-500/10 border border-violet-500/20 px-3.5 py-1 rounded-full mb-3">
-          // 04 · BEYOND THE CODE
-        </span>
+      <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
         <h2 
           id="beyond-code-heading" 
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4"
@@ -30,11 +27,11 @@ export default function BeyondTheCode() {
       <div className="glass-panel rounded-3xl border-white/10 overflow-hidden shadow-2xl p-6 sm:p-8 lg:p-10 mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Studio Imagery */}
-          <div className="lg:col-span-5 relative rounded-2xl overflow-hidden aspect-video lg:aspect-[4/5] bg-zinc-950 border border-white/10 group">
+          <div className="lg:col-span-5 relative rounded-2xl overflow-hidden aspect-[4/5] bg-zinc-950 border border-white/10 group">
             <img 
               src={contentCreationData.image} 
-              alt="Tech Studio & Gadget Creation Setup" 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              alt="Instagram Technology Content Creation Reels by Sneha Rajput" 
+              className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent pointer-events-none" />
@@ -44,7 +41,7 @@ export default function BeyondTheCode() {
               <div className="flex items-center gap-2 mb-1">
                 <Video className="w-4 h-4 text-pink-400" />
                 <span className="text-xs font-mono font-medium text-white tracking-wide">
-                  On-Camera Tech Stories
+                  On-Camera Tech Reviews
                 </span>
               </div>
               <p className="text-[11px] text-zinc-300">
@@ -58,7 +55,7 @@ export default function BeyondTheCode() {
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-300 text-xs font-mono mb-3">
                 <Instagram className="w-3.5 h-3.5" />
-                <span>Instagram Tech Reference</span>
+                <span>Instagram Tech Channel</span>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">
@@ -70,7 +67,7 @@ export default function BeyondTheCode() {
               </p>
 
               <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed mb-6">
-                Creating on-camera tech content gives me a sharp, user-first perspective on how people adopt technology. Testing new smartphone processors, camera optics, and dev tools keeps me attuned to consumer experience and ergonomic design.
+                Creating on-camera tech content gives me a clear, user-first perspective on how people adopt new technology. Testing smartphones, camera performance, and developer tools keeps me thoughtful about practical usability and user experience.
               </p>
             </div>
 
@@ -114,7 +111,7 @@ export default function BeyondTheCode() {
                 className="btn-secondary text-xs !py-2 !px-4 inline-flex items-center gap-1.5"
                 aria-label="View Instagram page @yantra.labs"
               >
-                <span>View Channel Content</span>
+                <span>Visit @yantra.labs</span>
                 <ExternalLink className="w-3.5 h-3.5 text-pink-400" />
               </a>
             </div>

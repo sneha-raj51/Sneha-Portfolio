@@ -6,22 +6,22 @@ export const personalData = {
   title: "Full-Stack Developer",
   headline: "Building digital experiences, one idea at a time.",
   location: "Greater Noida / Delhi NCR, India",
-  email: "sneharajput.work@gmail.com",
+  email: import.meta.env.VITE_CONTACT_EMAIL || "sneharajput.work@gmail.com",
   status: "Available for Internships & Projects · B.Tech CSE '28",
   educationBadge: "GNIOT · Class of 2028",
   avatar: "/images/sneha-portrait.png",
   
   about: {
-    lead: "I am a Full-Stack Developer and Computer Science undergraduate at Greater Noida Institute of Technology (GNIOT), passionate about transforming complex software challenges into elegant, intuitive digital experiences.",
+    lead: "I am a Full-Stack Developer and Computer Science student at Greater Noida Institute of Technology (GNIOT, Class of 2028). I enjoy building practical web applications, solving engineering problems, and designing clean, responsive interfaces.",
     paragraphs: [
-      "My engineering focus revolves around modern web architecture, responsive interfaces, and integrating artificial intelligence into meaningful applications. From interactive desktop simulations to end-to-end e-commerce engines and intelligent career platforms, I build software that balances technical precision with refined user experience.",
-      "Beyond code, I am deeply fascinated by how people interact with emerging technology. I regularly step in front of the lens to create on-camera tech and gadget content for @yantra.labs, communicating hardware and software nuances to a vibrant community."
+      "My focus is on modern web development, responsive frontend design, and building functional applications with React and Node.js. My work spans full-stack projects including an e-commerce store, an interactive desktop-style portfolio, and career and student support tools.",
+      "Outside of coding, I create on-camera tech and gadget content for @yantra.labs. Testing smartphones, consumer hardware, and developer peripherals helps me better understand product usability and user experience."
     ],
     highlights: [
       {
-        label: "Primary Identity",
+        label: "Focus",
         value: "Full-Stack Developer",
-        desc: "Building scalable web apps & intuitive interfaces"
+        desc: "Building responsive web applications and clean user interfaces"
       },
       {
         label: "Education",
@@ -29,14 +29,14 @@ export const personalData = {
         desc: "Greater Noida Institute of Technology (2024–2028)"
       },
       {
-        label: "AI Exploration",
-        value: "Intelligent Systems",
-        desc: "Career intelligence & student support chatbots"
+        label: "Applied Projects",
+        value: "Web & AI Tools",
+        desc: "Career prep platforms, e-commerce, and student chatbots"
       },
       {
-        label: "Content Craft",
-        value: "Tech Content",
-        desc: "On-camera tech review & gadget analysis"
+        label: "Content Creation",
+        value: "Tech Reviews",
+        desc: "On-camera smartphone and gadget breakdowns"
       }
     ]
   },
@@ -45,7 +45,7 @@ export const personalData = {
     github: "https://github.com/sneha-raj51",
     linkedin: "https://www.linkedin.com/in/sneha-rajput-bb8415322/",
     instagram: "https://www.instagram.com/yantra.labs/",
-    email: "sneharajput.work@gmail.com"
+    email: import.meta.env.VITE_CONTACT_EMAIL || "sneharajput.work@gmail.com"
   }
 };
 
@@ -53,7 +53,7 @@ export const skillsData = [
   {
     category: "Frontend Engineering",
     icon: "Layout",
-    description: "Crafting performant, accessible, and cinematic user interfaces.",
+    description: "Building clean, responsive, and accessible user interfaces.",
     skills: [
       "React.js",
       "JavaScript (ES6+)",
@@ -68,7 +68,7 @@ export const skillsData = [
   {
     category: "Backend & Systems",
     icon: "Server",
-    description: "Architecting reliable server logic and application data flows.",
+    description: "Developing backend services, RESTful APIs, and database integrations.",
     skills: [
       "Python",
       "Node.js",
@@ -83,7 +83,7 @@ export const skillsData = [
   {
     category: "Developer Tooling & Workflows",
     icon: "Cpu",
-    description: "Leveraging efficient developer tooling, version control, and cloud workflows.",
+    description: "Version control, build tools, API testing, and deployment platforms.",
     skills: [
       "Git & GitHub",
       "Vite & Build Tooling",
@@ -95,7 +95,7 @@ export const skillsData = [
   {
     category: "Computer Science Core",
     icon: "GraduationCap",
-    description: "Foundational engineering knowledge from B.Tech coursework.",
+    description: "Core computer science principles from undergraduate coursework.",
     skills: [
       "Data Structures & Algorithms",
       "Object-Oriented Programming (OOP)",
@@ -137,7 +137,7 @@ export const projectsData = [
     highlights: [
       "Catalog browsing with dynamic category filters and product cards",
       "Interactive cart management with real-time price calculations",
-      "Clean checkout process designed for high conversion",
+      "Structured checkout flow with order summary and validation",
       "Fully responsive mobile-first shopping experience"
     ],
     liveUrl: "https://snitch-full-stack-e-commerce-websit.vercel.app/",
@@ -155,7 +155,7 @@ export const projectsData = [
     highlights: [
       "Interactive Finder with file navigation and project folders",
       "Working Terminal simulator responding to developer commands",
-      "macOS Dock with smooth magnifying magnification states",
+      "macOS Dock with smooth magnification hover animations",
       "Layered window depth and system menubar interactions"
     ],
     liveUrl: "https://mac-os-portfolio-ol86.vercel.app/",
@@ -187,10 +187,10 @@ export const contentCreationData = {
   handle: "@yantra.labs",
   platform: "Instagram",
   url: "https://www.instagram.com/yantra.labs/",
-  title: "On-Camera Tech & Gadget Storytelling",
-  subtitle: "Translating complex hardware & modern gadgets into engaging visual stories",
+  title: "On-Camera Tech & Gadget Content",
+  subtitle: "Sharing smartphone reviews, consumer hardware insights, and gadget breakdowns",
   relationshipNote: "Content created on camera for my brother's tech platform, @yantra.labs. Focuses on tech presentation, consumer hardware analysis, and gadget breakdown.",
-  image: "/images/content_creator.jpg",
+  image: "/images/content-creation-reels.png",
   pillars: [
     {
       title: "Smartphone & Hardware Breakdowns",
@@ -202,7 +202,7 @@ export const contentCreationData = {
     },
     {
       title: "Accessible Tech Communication",
-      desc: "Distilling intricate engineering concepts into crisp, relatable on-camera reels for a curious digital audience."
+      desc: "Explaining technical features, benchmarks, and real-world performance clearly for viewers."
     }
   ],
   stats: [
@@ -220,11 +220,11 @@ export const educationData = {
   timeline: "2024 – 2028",
   status: "Undergraduate (Graduating 2028)",
   location: "Greater Noida, Uttar Pradesh, India",
-  description: "Building strong foundations in computer science principles, algorithmic problem solving, software engineering, and full-stack system implementation.",
+  description: "Developing strong foundations in computer science principles, data structures, algorithms, and full-stack web development.",
   highlights: [
     "Core curriculum: Data Structures & Algorithms, Object-Oriented Programming, Database Systems",
-    "Active technical builder exploring full-stack engineering alongside academic coursework",
-    "Focus on modern industry workflows: Git, REST APIs, responsive React interfaces, and AI tooling",
-    "Targeting software engineering internships, technical apprenticeships, and collaborative projects"
+    "Building full-stack projects and web applications alongside coursework",
+    "Practicing industry workflows with Git, REST APIs, responsive React interfaces, and problem solving",
+    "Seeking software engineering internships and junior developer opportunities"
   ]
 };

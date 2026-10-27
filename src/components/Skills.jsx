@@ -24,9 +24,6 @@ export default function Skills() {
     >
       {/* Section Header */}
       <div className="flex flex-col items-center text-center mb-12">
-        <span className="font-mono text-xs uppercase tracking-widest text-violet-400 bg-violet-500/10 border border-violet-500/20 px-3.5 py-1 rounded-full mb-3">
-          // 02 · TECHNICAL PROFICIENCY
-        </span>
         <h2 
           id="skills-heading" 
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4"
@@ -48,7 +45,7 @@ export default function Skills() {
                 : 'bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10'
             }`}
           >
-            All Disciplines
+            All Categories
           </button>
           {skillsData.map((cat) => (
             <button
@@ -106,7 +103,7 @@ export default function Skills() {
               </div>
 
               <div className="mt-8 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-zinc-500">
-                <span>{group.skills.length} Competencies</span>
+                <span>{group.skills.length} Skills</span>
                 <span className="text-violet-400/80">Active Practice</span>
               </div>
             </div>

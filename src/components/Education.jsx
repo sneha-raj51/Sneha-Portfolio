@@ -10,10 +10,7 @@ export default function Education() {
       aria-labelledby="education-heading"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center mb-16">
-        <span className="font-mono text-xs uppercase tracking-widest text-violet-400 bg-violet-500/10 border border-violet-500/20 px-3.5 py-1 rounded-full mb-3">
-          // 05 · ACADEMIC FOUNDATION
-        </span>
+      <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
         <h2 
           id="education-heading" 
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4"
@@ -21,7 +18,7 @@ export default function Education() {
           Education & Continuous Learning
         </h2>
         <p className="text-zinc-400 max-w-2xl text-base sm:text-lg">
-          Grounding practical engineering capabilities in foundational computer science principles.
+          Balancing core computer science coursework with hands-on software development.
         </p>
       </div>
 
@@ -66,7 +63,7 @@ export default function Education() {
             <div className="lg:col-span-5 space-y-4">
               <h4 className="text-sm font-mono uppercase tracking-wider text-zinc-300 flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-violet-400" />
-                <span>Program Trajectory</span>
+                <span>Program Overview</span>
               </h4>
               <p className="text-zinc-400 text-sm leading-relaxed">
                 {educationData.description}
@@ -82,14 +79,14 @@ export default function Education() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-zinc-400">Focus:</span>
-                  <span className="font-mono text-zinc-200">Full-Stack & Intelligent Systems</span>
+                  <span className="font-mono text-zinc-200">Full-Stack Development & Core CS</span>
                 </div>
               </div>
             </div>
 
             <div className="lg:col-span-7 space-y-4">
               <h4 className="text-sm font-mono uppercase tracking-wider text-zinc-300">
-                Academic & Practical Milestones
+                Academic Highlights & Focus Areas
               </h4>
               <div className="space-y-3">
                 {educationData.highlights.map((item, idx) => (

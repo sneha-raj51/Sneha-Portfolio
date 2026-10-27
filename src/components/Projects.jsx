@@ -11,10 +11,7 @@ export default function Projects() {
       aria-labelledby="projects-heading"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center mb-16">
-        <span className="font-mono text-xs uppercase tracking-widest text-violet-400 bg-violet-500/10 border border-violet-500/20 px-3.5 py-1 rounded-full mb-3">
-          // 03 · SELECTED WORKS
-        </span>
+      <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
         <h2 
           id="projects-heading" 
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4"
@@ -80,10 +77,10 @@ export default function Projects() {
                       {project.description}
                     </p>
 
-                    {/* Architectural Highlights */}
+                    {/* Key Highlights */}
                     <div className="space-y-2 mb-6">
                       <p className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">
-                        Key Capabilities:
+                        Key Highlights:
                       </p>
                       <ul className="space-y-1.5 text-xs sm:text-sm text-zinc-300">
                         {project.highlights.map((item, hIdx) => (
@@ -117,7 +114,7 @@ export default function Projects() {
                       className="btn-primary text-xs !py-2.5 !px-5 inline-flex items-center gap-2"
                       aria-label={`Open live preview of ${project.title}`}
                     >
-                      <span>Launch Project</span>
+                      <span>Live Demo</span>
                       <ExternalLink className="w-3.5 h-3.5" />
                     </a>
 
@@ -129,7 +126,7 @@ export default function Projects() {
                       aria-label={`View GitHub repository for ${project.title}`}
                     >
                       <Github className="w-3.5 h-3.5" />
-                      <span>Codebase</span>
+                      <span>GitHub Code</span>
                     </a>
                   </div>
                 </div>

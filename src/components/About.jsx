@@ -14,17 +14,17 @@ export default function About() {
     {
       icon: Cpu,
       title: "Artificial Intelligence",
-      description: "Integrating intelligent AI capabilities into real-world workflows, such as career intelligence tools and conversational educational assistants."
+      description: "Building AI-integrated applications, including career preparation tools and interactive student support chatbots."
     },
     {
       icon: Smartphone,
       title: "Gadget & Tech Content",
-      description: "Presenting on-camera tech reviews and smartphone breakdowns for @yantra.labs, communicating complex tech features clearly."
+      description: "Presenting on-camera smartphone breakdowns and hardware reviews for @yantra.labs, communicating technical features clearly."
     },
     {
       icon: GraduationCap,
       title: "Computer Science Foundation",
-      description: "Undergraduate student at GNIOT (2024–2028), grounding software craftsmanship in core CS principles, algorithms, and system design."
+      description: "Undergraduate student at GNIOT (2024–2028), learning core CS principles, data structures, and software engineering practices."
     }
   ];
 
@@ -35,10 +35,7 @@ export default function About() {
       aria-labelledby="about-heading"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center mb-16">
-        <span className="font-mono text-xs uppercase tracking-widest text-violet-400 bg-violet-500/10 border border-violet-500/20 px-3.5 py-1 rounded-full mb-3">
-          // 01 · ABOUT ME
-        </span>
+      <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
         <h2 
           id="about-heading" 
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4"
@@ -85,11 +82,11 @@ export default function About() {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Open-Source & AI Integrations</span>
+                <span>Open-Source & Web Projects</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>Technical Personal Branding</span>
+                <span>Technical Content & Knowledge Sharing</span>
               </div>
             </div>
           </div>
